@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Kandagatla-Anoop-Portfolio/static/css/main.14baa35c.css",
-    "main.js": "/Kandagatla-Anoop-Portfolio/static/js/main.6a192622.js",
+    "main.js": "/Kandagatla-Anoop-Portfolio/static/js/main.266dd198.js",
     "index.html": "/Kandagatla-Anoop-Portfolio/index.html",
     "main.14baa35c.css.map": "/Kandagatla-Anoop-Portfolio/static/css/main.14baa35c.css.map",
-    "main.6a192622.js.map": "/Kandagatla-Anoop-Portfolio/static/js/main.6a192622.js.map"
+    "main.266dd198.js.map": "/Kandagatla-Anoop-Portfolio/static/js/main.266dd198.js.map"
   },
   "entrypoints": [
     "static/css/main.14baa35c.css",
-    "static/js/main.6a192622.js"
+    "static/js/main.266dd198.js"
   ]
 }
