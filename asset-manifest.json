@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Kandagalta-Anoop-Portfolio/static/css/main.14baa35c.css",
+    "main.js": "/Kandagalta-Anoop-Portfolio/static/js/main.0e25df25.js",
+    "index.html": "/Kandagalta-Anoop-Portfolio/index.html",
+    "main.14baa35c.css.map": "/Kandagalta-Anoop-Portfolio/static/css/main.14baa35c.css.map",
+    "main.0e25df25.js.map": "/Kandagalta-Anoop-Portfolio/static/js/main.0e25df25.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14baa35c.css",
+    "static/js/main.0e25df25.js"
+  ]
+}
