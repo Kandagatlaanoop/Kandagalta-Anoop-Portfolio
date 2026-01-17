@@ -28,7 +28,7 @@ A modern, professional portfolio website showcasing AI/ML projects with clean RG
 
 1. **Clone the repository:**
 ```bash
-git clone https://github.com/Kandagatlaanoop/ai-portfolio.git
+git clone https://github.com/Kandagatlaanoop/Kandagatla-Anoop-Portfolio.git
 cd ai-portfolio
 ```
 
