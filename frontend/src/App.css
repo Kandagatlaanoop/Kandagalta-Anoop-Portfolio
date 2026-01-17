@@ -1,34 +1,163 @@
-.App-logo {
-    height: 40vmin;
-    pointer-events: none;
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Roboto+Mono:wght@300;400;500&display=swap');
+
+* {
+  font-family: 'Roboto Mono', monospace;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-        animation: App-logo-spin infinite 20s linear;
-    }
+h1, h2, h3, h4, h5, h6, .font-mono {
+  font-family: 'JetBrains Mono', monospace;
 }
 
-.App-header {
-    background-color: #0f0f10;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(10px + 2vmin);
-    color: white;
+body {
+  background-color: #000000;
+  color: #ffffff;
 }
 
-.App-link {
-    color: #61dafb;
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
 }
 
-@keyframes App-logo-spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+/* RGB Border Animation for Cards */
+@keyframes rgb-border {
+  0% {
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.5), 0 0 40px rgba(0, 102, 255, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 102, 255, 0.5), 0 0 50px rgba(0, 217, 255, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(0, 217, 255, 0.5), 0 0 40px rgba(0, 102, 255, 0.3);
+  }
+}
+
+.rgb-border-card {
+  animation: rgb-border 3s ease-in-out infinite;
+}
+
+.rgb-border-card:hover {
+  box-shadow: 0 0 40px rgba(0, 217, 255, 0.8), 0 0 60px rgba(0, 102, 255, 0.5) !important;
+}
+
+/* RGB Border for Button */
+.rgb-border-button {
+  position: relative;
+  overflow: hidden;
+}
+
+.rgb-border-button::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(90deg, #0066FF, #00D9FF, #0066FF);
+  background-size: 200% 100%;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  animation: rgb-gradient 3s linear infinite;
+}
+
+@keyframes rgb-gradient {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 200% 0%;
+  }
+}
+
+/* RGB Icon Button Glow */
+.rgb-icon-button {
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.rgb-icon-button:hover {
+  box-shadow: 0 0 20px rgba(0, 217, 255, 0.6), 0 0 40px rgba(0, 102, 255, 0.4);
+}
+
+/* Gradient Animation for Hero Text */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
+
+/* Hover Gradient Transition */
+.hover-gradient-shift {
+  transition: background 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hover-gradient-shift:hover {
+  background: linear-gradient(135deg, rgba(0, 102, 255, 0.3), rgba(0, 217, 255, 0.3));
+}
+
+/* Custom Input Styles */
+input, textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  box-shadow: 0 0 15px rgba(0, 217, 255, 0.4);
+  outline: none;
+}
+
+/* Button Hover Effects */
+button {
+  transition: background 0.3s cubic-bezier(0.4, 0, 0.2, 1), transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 20px rgba(0, 217, 255, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Card Hover Effects */
+.group:hover img {
+  transform: scale(1.1);
+}
+
+/* Remove default link underline */
+a {
+  text-decoration: none;
+}
+
+/* Selection Color */
+::selection {
+  background-color: rgba(0, 217, 255, 0.3);
+  color: #ffffff;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #0066FF, #00D9FF);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #00D9FF, #0066FF);
 }
